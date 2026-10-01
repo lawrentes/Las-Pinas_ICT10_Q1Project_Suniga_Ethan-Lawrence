@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1 Project - SKU Generator</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/">
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/"></script>
+    
+
+    <style>
+        body {
+            background-color: hsl(22, 100%, 85%);
+            font-family:monospace;
+            text-align: center; 
+            margin: 0;
+            padding: 0;
+        }
+        .top-nav { 
+            background-color: #18181b; 
+            padding: 15px; 
+            text-align: center; 
+            margin-bottom: 30px; 
+        }
+        .top-nav a { 
+            color: hsl(22, 100%, 85%); 
+            text-decoration: none; 
+            margin: 0 20px; 
+            font-weight: bold; 
+        }
+        .sku-card { 
+            background-color: #ffffff; 
+            padding: 25px; 
+            margin: 20px auto; 
+            max-width: 450px; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05); 
+            text-align: left; 
+        }
+        .sku-card label { 
+            display: block; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            color: #4b5563;
+        }
+        .sku-card select { 
+            width: 100%; 
+            padding: 10px; 
+            margin-top: 5px; 
+            border-radius: 6px; 
+            border: 1px solid #d1d5db;
+            background-color: #f9fafb;
+        }
+        .generate-btn { 
+            background-color: #eb4d25;
+            color: white; 
+            border: none; 
+            padding: 12px 24px; 
+            font-size: 16px; 
+            font-weight: bold; 
+            border-radius: 6px; 
+            cursor: pointer; 
+            width: 100%; 
+            margin-top: 25px; 
+            transition: background 0.2s;
+        }
+
+        .output-zone { 
+            text-align: center; 
+            margin-top: 25px; 
+            border-top: 2px dashed #e5e7eb; 
+            padding-top: 15px; 
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="top-nav">
+        <a href="index.html"> > SKU Generator (Project :3)</a>
+        <a href="receipt.html">> Receipt Generator (Skills Test :D)</a>
+    </nav>
+
+    <h2>OBMC Entrep Fair - Project SKU Builder</h2>
+
+    <div class="sku-card">
+        <h3> ◓ Select Product</h3>
+        
+        <label for="brand-select">Select Brand:</label>
+        <select id="brand-select">
+            <option value="APL">Apple (APL)</option>
+            <option value="SAM">Samsung (SAM)</option>
+            <option value="GGL">Google (GGL)</option>
+        </select>
+
+        <label for="type-select">Product Type:</label>
+        <select id="type-select">
+            <option value="LP">Laptop (LP)</option>
+            <option value="PH">Phone (PH)</option>
+            <option value="TB">Tablet (TB)</option>
+        </select>
+
+        <label for="color-select">Color Variant:</label>
+        <select id="color-select">
+            <option value="BLK">Space Black (BLK)</option>
+            <option value="SLV">Sleek Silver (SLV)</option>
+            <option value="GRY">Charcoal Gray (GRY)</option>
+        </select>
+
+        
+        <button py-click="generate_sku" class="generate-btn">SKU Code</button>
+
+        <div class="output-zone">
+            <h3>SKU code goes here:</h3>
+            <h1 id="sku-display" style="color: #acdf73; letter-spacing: 2px; font-family: monospace; margin-top: 10px;">---</h1>
+            <script type="py" src="main.py" async></script>
+            <p style="text-align: center; font-weight: bold; margin-top: 15px;">hi</p>
+        </div>
+    </div>
+
+    
+
+
+
+
+<script type="py" src="main.py" async></script>
+
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Test</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/">
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/"></script>
+</head>
+<body>
+
+<label><input type="checkbox" id="item1" value="149"> Classic Cheeseburger — ₱149.00</label><br>
+<label><input type="checkbox" id="item2" value="159"> Bacon Mushroom Burger — ₱159.00</label><br>
+<label><input type="checkbox" id="item3" value="119"> Large French Fries — ₱119.00</label><br>
+<label><input type="checkbox" id="item4" value="119"> 10-Piece Chicken Nuggets — ₱119.00</label><br>
+<label><input type="checkbox" id="item5" value="79"> Carbonated Soda Pop — ₱79.00</label><br>
+
+
+<button py-click="create_order" class="order-button">Calculate Total Receipt</button>
+
+
+<div id="show" class="receipt-summary"></div>
+
+</body>
+</html>
