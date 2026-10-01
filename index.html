@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Q1 Project - SKU Generator</title>
+    <title>Q1 Project - SKU Generator :3</title>
 
-    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/"> <!-- this is to connect the html to python but its not working -->
     <script type="module" src="https://pyscript.net/releases/2026.7.3/"></script>
     
 
     <style>
+        h3 {
+            font-family: 'Courier New', Courier, monospace;
+        }
         body {
             background-color: hsl(22, 100%, 85%);
             font-family:monospace;
@@ -30,7 +33,7 @@
             font-weight: bold; 
         }
         .sku-card { 
-            background-color: #ffffff; 
+            background-color: #fff9f6; 
             padding: 25px; 
             margin: 20px auto; 
             max-width: 450px; 
@@ -63,7 +66,6 @@
             cursor: pointer; 
             width: 100%; 
             margin-top: 25px; 
-            transition: background 0.2s;
         }
 
         .output-zone { 
@@ -71,6 +73,16 @@
             margin-top: 25px; 
             border-top: 2px dashed #e5e7eb; 
             padding-top: 15px; 
+        }
+
+        label {
+            font-family: 'Courier New', Courier, monospace;
+        }
+        select {
+            font-family: 'Courier New', Courier, monospace;
+        }
+        option {
+            font-family: 'Courier New', Courier, monospace;
         }
     </style>
 </head>
@@ -81,10 +93,10 @@
         <a href="receipt.html">> Receipt Generator (Skills Test :D)</a>
     </nav>
 
-    <h2>OBMC Entrep Fair - Project SKU Builder</h2>
+    <h2>OBMC Entrep Fair - SKU generator</h2>
 
     <div class="sku-card">
-        <h3> ◓ Select Product</h3>
+        <h3> ◓ Select Products from Glorking Inc.</h3>
         
         <label for="brand-select">Select Brand:</label>
         <select id="brand-select">
@@ -108,7 +120,7 @@
         </select>
 
         
-        <button py-click="generate_sku" class="generate-btn">SKU Code</button>
+        <button py-click="generate_sku" class="generate-btn" style="font-family: 'Courier New', Courier, monospace;">generate code</button>
 
         <div class="output-zone">
             <h3>SKU code goes here:</h3>
@@ -118,12 +130,12 @@
         </div>
     </div>
 
-    
 
 
 
 
-<script type="py" src="main.py" async></script>
+ <!-- i doinbt know if to put py or 
+pyscript but none is working eitherway hfdjspsrol-->
 
 
 </body>

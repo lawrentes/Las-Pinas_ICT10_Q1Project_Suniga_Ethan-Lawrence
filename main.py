@@ -1,17 +1,17 @@
-from pyscript import display, document
+from pyscript import display, document #WHY is it yellow WHYY is it NOT WOKING
 
 def SKU_generator(e):
-   
+    
     document.getElementById('sku-display').innerHTML = " "
 
     
- 
+    
     category = document.getElementById('brand-select').value
     product_name = document.getElementById('type-select').value
     stock_qty = document.getElementById('quantity').value
     
-    sku = str(category).upper() + "-" + str(product_name).upper()
-    
+    sku = str(category).upper() + "-" + str(product_name).upper() #i found this improved one on the internet
+    #it might clip into the words
     display("SKU: ", sku, target='sku-display')
 
 
@@ -33,8 +33,8 @@ def create_order(e):
     tax = subtotal * tax_rate
     total = subtotal + tax
     
- 
-    receipt = f"""
+# ty8s next one is from yoir code thank you :)
+    receipt = f""" 
     <h3>==== Receipt ====</h3>
     <p>Subtotal: ₱{subtotal:.2f}</p>
     <p>Tax: ₱{tax:.2f}</p>
@@ -43,3 +43,4 @@ def create_order(e):
     
 
     document.getElementById("show").innerHTML = receipt
+
